@@ -9,7 +9,7 @@ function changeMe(arr) {
             output.firstName = arr[i][0]
             output.lastName = arr[i][1]
             output.gender = arr[i][2]
-            if(arr[i][3] == undefined){
+            if(arr[i][3] == undefined || arr[i][3] >= yearNow){
                 output.age = "Invalid Birth Year"
             }
             else{
@@ -23,7 +23,7 @@ function changeMe(arr) {
 }
 
 // TEST CASES
-changeMe([['Christ', 'Evans', 'Male', 1982], ['Robert', 'Downey', 'Male']]); 
+changeMe([['Christ', 'Evans', 'Male', 2982], ['Robert', 'Downey', 'Male']]); 
 // 1. Christ Evans:
 // { firstName: 'Christ',
 //   lastName: 'Evans',
