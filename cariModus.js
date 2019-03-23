@@ -11,7 +11,7 @@ function cariModus(arr) {
           }
       }
 
-     if(modusCount <= count){
+     if(count > modusCount){
             modusCount = count;
             modusNum = arr[i];
       } 
@@ -25,6 +25,7 @@ function cariModus(arr) {
   
 }
 
+console.log(cariModus([10,10, 4, 5, 2, 4]));
 // TEST CASES
 console.log(cariModus([10, 4, 5, 2, 4])); // 4
 console.log(cariModus([5, 10, 10, 6, 5])); // 5
