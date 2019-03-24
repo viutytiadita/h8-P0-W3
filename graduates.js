@@ -1,9 +1,7 @@
 function graduates (students) {
     var output = {}
-    var arrOutput = []
-    var listGraduates; 
+   
     for(i in students){
-          //console.log(students[i].class)
         if(output[students[i].class] == undefined){
             output[students[i].class] = []
           
