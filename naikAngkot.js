@@ -12,8 +12,11 @@ function naikAngkot(arrPenumpang) {
                 var indexTujuan = j
             }
             
-            if(indexAsal >= 0 && indexTujuan != 0){
+            if(indexAsal >= 0 && indexTujuan >= 0){
                 jarak = indexTujuan - indexAsal;
+                if(jarak < 0){
+                    jarak = jarak * -1
+                }
                 bayar = 2000*jarak
             }
         }
